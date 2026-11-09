@@ -1,0 +1,109 @@
+{
+ "single_cell eps=0.0 self=True": {
+  "steps": 115,
+  "paper": 115,
+  "end": "stable",
+  "DCs": 4157
+ },
+ "single_cell eps=0.04 self=True": {
+  "steps": 71,
+  "paper": 71,
+  "end": "stable",
+  "DCs": 2521
+ },
+ "single_cell eps=0.0 self=False": {
+  "steps": 111,
+  "paper": 115,
+  "end": "cycle of 2",
+  "DCs": 3341
+ },
+ "single_cell eps=0.04 self=False": {
+  "steps": 72,
+  "paper": 71,
+  "end": "cycle of 2",
+  "DCs": 2532
+ },
+ "random": [
+  {
+   "w2": -0.04,
+   "stable": 20,
+   "cycles": 0,
+   "iterations_median": 11.0,
+   "DC_fraction": 1.0,
+   "components": 1.0,
+   "elongation": 1.0
+  },
+  {
+   "w2": -0.06,
+   "stable": 20,
+   "cycles": 0,
+   "iterations_median": 13.0,
+   "DC_fraction": 0.7337712294962984,
+   "components": 2.55,
+   "elongation": 1.6272487645808866
+  },
+  {
+   "w2": -0.08,
+   "stable": 19,
+   "cycles": 1,
+   "iterations_median": 13.0,
+   "DC_fraction": 0.5356873276237482,
+   "components": 16.55,
+   "elongation": 1.7900371490460656
+  },
+  {
+   "w2": -0.1,
+   "stable": 20,
+   "cycles": 0,
+   "iterations_median": 13.0,
+   "DC_fraction": 0.4168021483524459,
+   "components": 52.3,
+   "elongation": 1.9991945511520413
+  },
+  {
+   "w2": -0.12,
+   "stable": 20,
+   "cycles": 0,
+   "iterations_median": 13.0,
+   "DC_fraction": 0.344309769197271,
+   "components": 79.95,
+   "elongation": 1.8208303261769951
+  },
+  {
+   "w2": -0.16,
+   "stable": 20,
+   "cycles": 0,
+   "iterations_median": 12.5,
+   "DC_fraction": 0.263681230947888,
+   "components": 104.0,
+   "elongation": 1.465125952976548
+  },
+  {
+   "w2": -0.2,
+   "stable": 20,
+   "cycles": 0,
+   "iterations_median": 13.0,
+   "DC_fraction": 0.21794890404993464,
+   "components": 109.15,
+   "elongation": 1.3890049285236548
+  },
+  {
+   "w2": -0.25,
+   "stable": 20,
+   "cycles": 0,
+   "iterations_median": 13.0,
+   "DC_fraction": 0.18311075627812456,
+   "components": 107.3,
+   "elongation": 1.3693063932494256
+  },
+  {
+   "w2": -0.3,
+   "stable": 19,
+   "cycles": 1,
+   "iterations_median": 12.0,
+   "DC_fraction": 0.15949339526781825,
+   "components": 103.05,
+   "elongation": 1.361656396626382
+  }
+ ]
+}

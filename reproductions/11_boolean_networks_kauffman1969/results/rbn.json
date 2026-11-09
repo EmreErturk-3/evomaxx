@@ -1,0 +1,92 @@
+{
+ "derrida_slope": {
+  "1": {
+   "measured": 0.5205061224489796,
+   "annealed": 0.5
+  },
+  "2": {
+   "measured": 0.9343836734693881,
+   "annealed": 1.0
+  },
+  "3": {
+   "measured": 1.3671183673469394,
+   "annealed": 1.5
+  },
+  "5": {
+   "measured": 2.081632653061225,
+   "annealed": 2.5
+  }
+ },
+ "long_damage": {
+  "1": {
+   "measured": 0.0,
+   "annealed": 9.536743172944284e-09
+  },
+  "2": {
+   "measured": 0.0062050000000000004,
+   "annealed": 0.0028520240816403697
+  },
+  "3": {
+   "measured": 0.38359,
+   "annealed": 0.3819660112501051
+  },
+  "4": {
+   "measured": 0.453695,
+   "annealed": 0.45631098730792363
+  },
+  "5": {
+   "measured": 0.48195,
+   "annealed": 0.4812099363241158
+  }
+ },
+ "attractors_K2": [
+  {
+   "N": 16,
+   "attractors": 2.0,
+   "cycle_length": 2.4220779220779223,
+   "sqrtN": 4.0
+  },
+  {
+   "N": 32,
+   "attractors": 4.0,
+   "cycle_length": 2.0,
+   "sqrtN": 5.656854249492381
+  },
+  {
+   "N": 64,
+   "attractors": 4.0,
+   "cycle_length": 3.790322580645161,
+   "sqrtN": 8.0
+  },
+  {
+   "N": 128,
+   "attractors": 6.0,
+   "cycle_length": 6.266666666666667,
+   "sqrtN": 11.313708498984761
+  },
+  {
+   "N": 256,
+   "attractors": 7.5,
+   "cycle_length": 4.066666666666666,
+   "sqrtN": 16.0
+  }
+ ],
+ "cycles_KN": [
+  {
+   "N": 8,
+   "cycle_length": 8.0
+  },
+  {
+   "N": 12,
+   "cycle_length": 38.0
+  },
+  {
+   "N": 16,
+   "cycle_length": 84.875
+  },
+  {
+   "N": 20,
+   "cycle_length": 271.5
+  }
+ ]
+}

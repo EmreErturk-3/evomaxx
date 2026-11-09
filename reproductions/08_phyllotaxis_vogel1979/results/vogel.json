@@ -1,0 +1,75 @@
+{
+ "golden_angle": 137.50776405003785,
+ "packing": {
+  "most_uniform_angle": 137.50776405003785,
+  "widest_spacing_angle": 137.507499999988,
+  "worst_ring_cv": {
+   "137.508": 0.013065332739704512,
+   "137.408": 0.07131220950999868,
+   "137.608": 0.126655747850221,
+   "137.000": 0.09509392382934097
+  }
+ },
+ "parastichies": [
+  {
+   "florets": [
+    30,
+    80
+   ],
+   "numbers": [
+    13,
+    21
+   ],
+   "fibonacci": true,
+   "consecutive": true
+  },
+  {
+   "florets": [
+    100,
+    250
+   ],
+   "numbers": [
+    21,
+    34
+   ],
+   "fibonacci": true,
+   "consecutive": true
+  },
+  {
+   "florets": [
+    300,
+    700
+   ],
+   "numbers": [
+    34,
+    55
+   ],
+   "fibonacci": true,
+   "consecutive": true
+  },
+  {
+   "florets": [
+    900,
+    1800
+   ],
+   "numbers": [
+    55,
+    89
+   ],
+   "fibonacci": true,
+   "consecutive": true
+  },
+  {
+   "florets": [
+    2500,
+    4500
+   ],
+   "numbers": [
+    89,
+    144
+   ],
+   "fibonacci": true,
+   "consecutive": true
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvoMaxx: the reproductions, live</title>
+<meta name="description" content="The artificial-life models EvoMaxx is built on, each running live in the browser.">
+<style>
+  :root { --bg: #050508; --fg: #e9e7f2; --dim: #8f8da0; --accent: #ff7ad9; --accent2: #6ff0e0; --panel: rgba(12, 12, 18, 0.92); --line: #2c2c40; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 13px/1.5 ui-monospace, "DejaVu Sans Mono", monospace; overflow: hidden; }
+  #stage { position: fixed; left: 230px; right: 380px; top: 0; bottom: 0; }
+  #stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #list { position: fixed; left: 0; top: 0; bottom: 0; width: 230px; border-right: 1px solid var(--line); background: var(--panel); overflow-y: auto; }
+  #list h1 { font-size: 14px; letter-spacing: 1px; margin: 14px 14px 4px; background: linear-gradient(90deg, #ff5b5b, #5bff8a, #5b8aff);
+             -webkit-background-clip: text; background-clip: text; color: transparent; }
+  #list .sub { color: var(--dim); margin: 0 14px 10px; font-size: 11.5px; }
+  #list a { display: block; padding: 8px 14px; color: var(--dim); text-decoration: none; border-left: 3px solid transparent; }
+  #list a:hover { color: var(--fg); } #list a.on { color: var(--fg); border-left-color: var(--accent); background: #ffffff08; }
+  #list a small { display: block; color: #6f6d80; font-size: 11px; }
+  #side { position: fixed; right: 0; top: 0; bottom: 0; width: 380px; border-left: 1px solid var(--line); background: var(--panel); overflow-y: auto; padding: 14px 16px; box-sizing: border-box; }
+  #side h2 { font-size: 16px; margin: 0 0 2px; } #side .cite { color: var(--dim); font-size: 11.5px; margin-bottom: 10px; }
+  #side h3 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--dim); border-bottom: 1px solid var(--line); padding-bottom: 3px; margin: 14px 0 6px; }
+  #side p { margin: 6px 0; } #side .evo { border-left: 3px solid var(--accent2); padding-left: 10px; }
+  .row { display: grid; grid-template-columns: 1fr 130px 54px; gap: 6px; align-items: center; margin: 4px 0; color: var(--dim); }
+  .row input[type=range] { width: 100%; accent-color: var(--accent); } .row output { text-align: right; color: var(--fg); }
+  button, select { background: #1b1b2a; color: var(--fg); border: 1px solid #3a3a55; border-radius: 4px; font: inherit; padding: 4px 9px; cursor: pointer; margin: 3px 4px 3px 0; }
+  button:hover { border-color: #7a7aa8; }
+  #readout { color: var(--accent2); white-space: pre-wrap; min-height: 1.5em; }
+  a { color: var(--accent2); } kbd { color: var(--fg); }
+  #error { position: fixed; left: 240px; top: 10px; color: #ffcf6e; }
+  @media (max-width: 900px) { #list { width: 170px; } #stage { left: 170px; right: 0; bottom: 45vh; } #side { top: 55vh; width: auto; left: 170px; } }
+</style>
+</head>
+<body>
+<nav id="list">
+  <h1>EVOMAXX · SOURCES</h1>
+  <div class="sub">The models EvoMaxx is built on, each live. <a href="../../index.html">EvoMaxx v10 →</a></div>
+</nav>
+<main id="stage"><canvas id="gl"></canvas><canvas id="flat"></canvas></main>
+<aside id="side">
+  <h2 id="title"></h2><div class="cite" id="cite"></div>
+  <div id="controls"></div>
+  <div id="readout"></div>
+  <h3>What it shows</h3><div id="about"></div>
+  <h3>In EvoMaxx</h3><div id="evomaxx" class="evo"></div>
+  <h3>Reproduction</h3><div id="repro"></div>
+</aside>
+<div id="error"></div>
+<script src="js/gl.js"></script>
+<script>const MODELS = [];</script>
+<script src="js/lenia.js"></script>
+<script src="js/flowlenia.js"></script>
+<script src="js/young.js"></script>
+<script src="js/physarum.js"></script>
+<script src="js/cyclic.js"></script>
+<script src="js/kuramoto.js"></script>
+<script src="js/mapelites.js"></script>
+<script src="js/phyllotaxis.js"></script>
+<script src="js/rhythms.js"></script>
+<script src="js/turing.js"></script>
+<script src="js/rbn.js"></script>
+<script src="js/langton.js"></script>
+<script>
+"use strict";
+// The shell: a list of models, the stage (a WebGL 2 canvas and a 2D canvas over it) and a
+// side panel with the controls and the explanations. A model registers itself in MODELS as
+// { id, title, cite, folder, about, evomaxx, controls, init(env), frame(env, dt), click?(env, x, y) }.
+const $ = id => document.getElementById(id);
+const glCanvas = $("gl"), flatCanvas = $("flat");
+let gl = null;
+try { gl = GL.create(glCanvas); } catch (e) { $("error").textContent = e.message; }
+const env = { gl, glCanvas, flat: flatCanvas, ctx: flatCanvas.getContext("2d"), params: {}, readout: t => { $("readout").textContent = t; } };
+let current = null, last = performance.now();
+
+for (const m of MODELS) {
+  const a = document.createElement("a"); a.href = `#${m.id}`; a.id = `link-${m.id}`;
+  a.innerHTML = `${m.title}<small>${m.short}</small>`; $("list").append(a);
+}
+function resize() {
+  const r = $("stage").getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+  for (const c of [glCanvas, flatCanvas]) { c.width = Math.round(r.width * dpr); c.height = Math.round(r.height * dpr); }
+  env.width = glCanvas.width; env.height = glCanvas.height; env.dpr = dpr;
+}
+function open(id) {
+  const m = MODELS.find(x => x.id === id) || MODELS[0];
+  if (current?.stop) current.stop(env);
+  current = m;
+  document.querySelectorAll("#list a").forEach(a => a.classList.toggle("on", a.id === `link-${m.id}`));
+  $("title").textContent = m.title; $("cite").innerHTML = m.cite; $("about").innerHTML = m.about; $("evomaxx").innerHTML = m.evomaxx;
+  $("repro").innerHTML = `Measured against the paper in Python, with the figures and what did not reproduce: <a href="../${m.folder}/">${m.folder}</a>.`;
+  env.params = {};
+  const box = $("controls"); box.innerHTML = "";
+  for (const c of m.controls) {
+    if (c.button) { const b = document.createElement("button"); b.textContent = c.button; b.onclick = () => c.action(env); box.append(b); continue; }
+    if (c.options) {
+      env.params[c.key] = c.value;
+      const row = document.createElement("label"); row.className = "row"; row.innerHTML = `<span>${c.label}</span>`;
+      const s = document.createElement("select"); c.options.forEach(o => s.add(new Option(o, o))); s.value = c.value;
+      s.onchange = () => { env.params[c.key] = s.value; c.change?.(env); }; row.append(s, document.createElement("span")); box.append(row); continue;
+    }
+    env.params[c.key] = c.value;
+    const row = document.createElement("label"); row.className = "row";
+    row.innerHTML = `<span>${c.label}</span><input type="range" min="${c.min}" max="${c.max}" step="${c.step}" value="${c.value}"><output>${c.value}</output>`;
+    const input = row.querySelector("input"), out = row.querySelector("output");
+    input.oninput = () => { env.params[c.key] = +input.value; out.textContent = (+input.value).toFixed(c.digits ?? 2).replace(/\.?0+$/, "") || "0"; c.change?.(env); };
+    box.append(row);
+  }
+  env.readout("");
+  glCanvas.style.display = m.flat ? "none" : "block";
+  env.ctx.clearRect(0, 0, flatCanvas.width, flatCanvas.height);
+  try { m.init(env); } catch (e) { $("error").textContent = `${m.title}: ${e.message}`; console.error(e); }
+}
+flatCanvas.addEventListener("pointerdown", e => {
+  if (!current?.click) return;
+  const r = flatCanvas.getBoundingClientRect();
+  current.click(env, (e.clientX - r.left) * env.dpr, (e.clientY - r.top) * env.dpr, e);
+});
+function frame(now) {
+  const dt = Math.min((now - last) / 1000, 0.1); last = now;
+  if (current) { try { current.frame(env, dt); } catch (e) { $("error").textContent = `${current.title}: ${e.message}`; console.error(e); current = null; } }
+  requestAnimationFrame(frame);
+}
+addEventListener("resize", () => { resize(); if (current) open(current.id); });
+addEventListener("hashchange", () => open(location.hash.slice(1)));
+resize(); open(location.hash.slice(1)); requestAnimationFrame(frame);
+</script>
+</body>
+</html>

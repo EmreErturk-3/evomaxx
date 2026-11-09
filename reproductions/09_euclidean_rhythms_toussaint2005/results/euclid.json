@@ -1,0 +1,364 @@
+{
+ "rhythms": {
+  "E(2,5)": {
+   "paper": "x . x . .",
+   "bjorklund": "x . x . .",
+   "same": true
+  },
+  "E(3,4)": {
+   "paper": "x . x x",
+   "bjorklund": "x . x x",
+   "same": true
+  },
+  "E(3,5)": {
+   "paper": "x . x . x",
+   "bjorklund": "x . x . x",
+   "same": true
+  },
+  "E(3,7)": {
+   "paper": "x . x . x . .",
+   "bjorklund": "x . x . x . .",
+   "same": true
+  },
+  "E(3,8)": {
+   "paper": "x . . x . . x .",
+   "bjorklund": "x . . x . . x .",
+   "same": true
+  },
+  "E(4,7)": {
+   "paper": "x . x . x . x",
+   "bjorklund": "x . x . x . x",
+   "same": true
+  },
+  "E(4,9)": {
+   "paper": "x . x . x . x . .",
+   "bjorklund": "x . x . x . x . .",
+   "same": true
+  },
+  "E(4,11)": {
+   "paper": "x . . x . . x . . x .",
+   "bjorklund": "x . . x . . x . . x .",
+   "same": true
+  },
+  "E(5,6)": {
+   "paper": "x . x x x x",
+   "bjorklund": "x . x x x x",
+   "same": true
+  },
+  "E(5,7)": {
+   "paper": "x . x x . x x",
+   "bjorklund": "x . x x . x x",
+   "same": true
+  },
+  "E(5,8)": {
+   "paper": "x . x x . x x .",
+   "bjorklund": "x . x x . x x .",
+   "same": true
+  },
+  "E(5,9)": {
+   "paper": "x . x . x . x . x",
+   "bjorklund": "x . x . x . x . x",
+   "same": true
+  },
+  "E(5,11)": {
+   "paper": "x . x . x . x . x . .",
+   "bjorklund": "x . x . x . x . x . .",
+   "same": true
+  },
+  "E(5,12)": {
+   "paper": "x . . x . x . . x . x .",
+   "bjorklund": "x . . x . x . . x . x .",
+   "same": true
+  },
+  "E(5,16)": {
+   "paper": "x . . x . . x . . x . . x . . . .",
+   "bjorklund": "x . . x . . x . . x . . x . . .",
+   "same": false
+  },
+  "E(7,8)": {
+   "paper": "x . x x x x x x",
+   "bjorklund": "x . x x x x x x",
+   "same": true
+  },
+  "E(7,12)": {
+   "paper": "x . x x . x . x x . x .",
+   "bjorklund": "x . x x . x . x x . x .",
+   "same": true
+  },
+  "E(7,16)": {
+   "paper": "x . . x . x . x . . x . x . x .",
+   "bjorklund": "x . . x . x . x . . x . x . x .",
+   "same": true
+  },
+  "E(9,16)": {
+   "paper": "x . x x . x . x . x x . x . x .",
+   "bjorklund": "x . x x . x . x . x x . x . x .",
+   "same": true
+  },
+  "E(11,24)": {
+   "paper": "x . . x . x . x . x . x . . x . x . x . x . x .",
+   "bjorklund": "x . . x . x . x . x . x . . x . x . x . x . x .",
+   "same": true
+  },
+  "E(13,24)": {
+   "paper": "x . x x . x . x . x . x . x x . x . x . x . x .",
+   "bjorklund": "x . x x . x . x . x . x . x x . x . x . x . x .",
+   "same": true
+  }
+ },
+ "classification": {
+  "E(2,5)": {
+   "intervals": [
+    2,
+    3
+   ],
+   "paper": "euclidean",
+   "here": "euclidean"
+  },
+  "E(3,7)": {
+   "intervals": [
+    2,
+    2,
+    3
+   ],
+   "paper": "euclidean",
+   "here": "euclidean"
+  },
+  "E(4,9)": {
+   "intervals": [
+    2,
+    2,
+    2,
+    3
+   ],
+   "paper": "euclidean",
+   "here": "euclidean"
+  },
+  "E(5,11)": {
+   "intervals": [
+    2,
+    2,
+    2,
+    2,
+    3
+   ],
+   "paper": "euclidean",
+   "here": "euclidean"
+  },
+  "E(5,16)": {
+   "intervals": [
+    3,
+    3,
+    3,
+    3,
+    4
+   ],
+   "paper": "euclidean",
+   "here": "euclidean"
+  },
+  "E(2,3)": {
+   "intervals": [
+    2,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(3,4)": {
+   "intervals": [
+    2,
+    1,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(3,5)": {
+   "intervals": [
+    2,
+    2,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(3,8)": {
+   "intervals": [
+    3,
+    3,
+    2
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(4,7)": {
+   "intervals": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(4,11)": {
+   "intervals": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(5,6)": {
+   "intervals": [
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(5,7)": {
+   "intervals": [
+    2,
+    1,
+    2,
+    1,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(5,9)": {
+   "intervals": [
+    2,
+    2,
+    2,
+    2,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(5,12)": {
+   "intervals": [
+    3,
+    2,
+    3,
+    2,
+    2
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(7,8)": {
+   "intervals": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(7,16)": {
+   "intervals": [
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(11,24)": {
+   "intervals": [
+    3,
+    2,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "paper": "reverse",
+   "here": "reverse"
+  },
+  "E(5,8)": {
+   "intervals": [
+    2,
+    1,
+    2,
+    1,
+    2
+   ],
+   "paper": "neither",
+   "here": "neither"
+  },
+  "E(7,12)": {
+   "intervals": [
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2
+   ],
+   "paper": "neither",
+   "here": "neither"
+  },
+  "E(9,16)": {
+   "intervals": [
+    2,
+    1,
+    2,
+    2,
+    2,
+    1,
+    2,
+    2,
+    2
+   ],
+   "paper": "neither",
+   "here": "neither"
+  },
+  "E(13,24)": {
+   "intervals": [
+    2,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "paper": "neither",
+   "here": "neither"
+  }
+ },
+ "evomaxx": {
+  "rotations_of_bjorklund": 560,
+  "pairs": 560
+ }
+}

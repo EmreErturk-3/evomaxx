@@ -1,0 +1,44 @@
+as written   run 0: genomes tried   232, extinctions 0, score (last 30 s)  -5.00, structure share 1.00
+as written   run 1: genomes tried   232, extinctions 0, score (last 30 s)  -5.00, structure share 1.00
+as written   run 2: genomes tried   232, extinctions 0, score (last 30 s)  10.47, structure share 0.59
+as written   run 3: genomes tried   232, extinctions 0, score (last 30 s)   8.99, structure share 0.49
+as written   run 4: genomes tried   232, extinctions 0, score (last 30 s)   9.68, structure share 0.40
+as written   run 5: genomes tried   232, extinctions 0, score (last 30 s)  11.66, structure share 0.31
+as written   run 6: genomes tried 10932, extinctions 0, score (last 30 s)  -5.00, structure share 1.00
+as written   run 7: genomes tried   232, extinctions 0, score (last 30 s)   9.59, structure share 0.99
+as written   run 8: genomes tried   232, extinctions 0, score (last 30 s)  -5.00, structure share 1.00
+as written   run 9: genomes tried   232, extinctions 0, score (last 30 s)  12.34, structure share 0.72
+v1           run 0: genomes tried   276, extinctions 4, score (last 30 s)   6.80, structure share 0.69
+v1           run 1: genomes tried   243, extinctions 1, score (last 30 s)   8.50, structure share 1.00
+v1           run 2: genomes tried   232, extinctions 0, score (last 30 s)  10.47, structure share 0.59
+v1           run 3: genomes tried   232, extinctions 0, score (last 30 s)   8.99, structure share 0.49
+v1           run 4: genomes tried   232, extinctions 0, score (last 30 s)   9.68, structure share 0.40
+v1           run 5: genomes tried   232, extinctions 0, score (last 30 s)  11.66, structure share 0.31
+v1           run 6: genomes tried   542, extinctions 1, score (last 30 s)  11.71, structure share 0.93
+v1           run 7: genomes tried   232, extinctions 0, score (last 30 s)   9.59, structure share 0.99
+v1           run 8: genomes tried   243, extinctions 1, score (last 30 s)   9.84, structure share 1.00
+v1           run 9: genomes tried   232, extinctions 0, score (last 30 s)  12.34, structure share 0.72
+no selection run 0: genomes tried   331, extinctions 9, score (last 30 s)   9.82, structure share 0.53
+no selection run 1: genomes tried   243, extinctions 1, score (last 30 s)   7.57, structure share 1.00
+no selection run 2: genomes tried   232, extinctions 0, score (last 30 s)  10.96, structure share 0.85
+no selection run 3: genomes tried   232, extinctions 0, score (last 30 s)   8.96, structure share 0.50
+no selection run 4: genomes tried   232, extinctions 0, score (last 30 s)   9.73, structure share 0.40
+no selection run 5: genomes tried   232, extinctions 0, score (last 30 s)  10.78, structure share 0.20
+no selection run 6: genomes tried   254, extinctions 2, score (last 30 s)   5.24, structure share 0.97
+no selection run 7: genomes tried   232, extinctions 0, score (last 30 s)   9.96, structure share 0.78
+no selection run 8: genomes tried   298, extinctions 6, score (last 30 s)   0.07, structure share 0.79
+no selection run 9: genomes tried   232, extinctions 0, score (last 30 s)  11.31, structure share 0.91
+no heredity  run 0: genomes tried   231, extinctions 9, score (last 30 s)   1.55, structure share 0.96
+no heredity  run 1: genomes tried   220, extinctions 8, score (last 30 s)   0.28, structure share 0.89
+no heredity  run 2: genomes tried   154, extinctions 2, score (last 30 s)   2.64, structure share 1.00
+no heredity  run 3: genomes tried   176, extinctions 4, score (last 30 s)   4.25, structure share 1.00
+no heredity  run 4: genomes tried   176, extinctions 4, score (last 30 s)   3.81, structure share 1.00
+no heredity  run 5: genomes tried   165, extinctions 3, score (last 30 s)   6.08, structure share 1.00
+no heredity  run 6: genomes tried   198, extinctions 6, score (last 30 s)   0.92, structure share 0.97
+no heredity  run 7: genomes tried   154, extinctions 2, score (last 30 s)  -0.19, structure share 0.99
+no heredity  run 8: genomes tried   176, extinctions 4, score (last 30 s)   3.64, structure share 1.00
+no heredity  run 9: genomes tried   198, extinctions 6, score (last 30 s)   2.57, structure share 0.99
+as written  : score 4.11 in the first 30 s -> 4.27 in the last; flat 40 % of the time; structure share 0.75; 1302 genomes tried, 0.0 extinctions
+v1          : score 9.04 in the first 30 s -> 9.96 in the last; flat 2 % of the time; structure share 0.71; 270 genomes tried, 0.7 extinctions
+no selection: score 8.12 in the first 30 s -> 8.44 in the last; flat 5 % of the time; structure share 0.69; 252 genomes tried, 1.8 extinctions
+no heredity : score 3.34 in the first 30 s -> 2.55 in the last; flat 37 % of the time; structure share 0.98; 185 genomes tried, 4.8 extinctions

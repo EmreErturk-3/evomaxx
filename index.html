@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvoMaxx v10</title>
+<meta name="description" content="EvoMaxx: an artificial-life sandbox in which three chemicals (red, green and blue) evolve visuals and music.">
+<link rel="stylesheet" href="css/evomaxx.css">
+</head>
+<body>
+<canvas id="view"></canvas>
+<div id="labels"></div>
+<div id="scanline"></div>
+<div id="hud" class="panel"></div>
+<div id="gpuWarning" class="panel"></div>
+<div id="side" class="panel">
+  <header><h1>EVOMAXX v10</h1><button id="collapse" title="h">–</button></header>
+  <div id="tabs"></div>
+  <section class="page" data-tab="World">
+    <div class="row"><span>view</span>
+      <select id="mode"><option value="main">organism (v)</option><option value="discover">discover atlas (e)</option></select></div>
+    <h2>Rule</h2>
+    <div class="row"><span>preset</span><select id="preset"><option value="">— organisms from the experiments —</option></select></div>
+    <div class="row"><span>kernel</span><select id="kernel"></select></div>
+    <div class="row"><span>delta</span><select id="delta"></select></div>
+    <div class="row"><span>response</span><select id="response"></select></div>
+    <div class="row"><span>physics</span><select id="physics"></select></div>
+    <div class="formula" id="formula"></div>
+    <h2>Display</h2>
+    <div class="row"><span>display (p)</span><select id="display"><option value="flat">flat</option>
+      <option value="lava" selected>lava lamp: matter floats above an endless floor</option></select></div>
+    <div class="note">The lava lamp has its own tab: <b>Lamp</b>.</div>
+    <h2>World</h2>
+    <div class="row"><span>seed</span><select id="seedMode"><option value="noise">uniform noise (as v1)</option><option value="patch">noise patch</option><option value="blobs" selected>soft blobs</option></select></div>
+    <div class="row"><span>world size</span><select id="worldSize"><option>256</option><option selected>512</option><option>1024</option></select></div>
+    <div class="row"><span>steps / frame</span><input id="speed" type="range" min="1" max="16" value="1"><span id="speedValue">1</span></div>
+    <button class="big" id="reseed">reseed world (r)</button>
+    <button class="big" id="mutate">mutate genome a little (m)</button>
+    <div class="row"><span>mutation strength</span><input id="strength" type="range" min="1" max="60" value="15"><span id="strengthValue">0.15</span></div>
+    <button class="big" id="reroll">new random genome (x)</button>
+    <h2>Capture</h2>
+    <div class="row"><button id="record">record video (c)</button><button id="recordAudio">record music</button><button id="shot">screenshot (k)</button></div>
+    <div class="row"><span>auto-reseed dead worlds</span><input type="checkbox" id="revive" checked></div>
+    <div class="row"><span>ink</span><select id="ink"><option value="1,0,0">red</option><option value="0,1,0">green</option><option value="0,0,1">blue</option><option value="1,1,1" selected>white</option></select></div>
+    <div class="note"><kbd>left drag</kbd> paint · <kbd>shift drag</kbd> erase · <kbd>right drag</kbd> move · <kbd>wheel</kbd> zoom · <kbd>space</kbd> pause · <kbd>n</kbd> step · <kbd>f</kbd> fit
+      · <kbd>p</kbd> flat / lava lamp · <kbd>a</kbd> music · <kbd>o</kbd> v1 evolution · <kbd>t</kbd> follow · <kbd>g</kbd> dolly · <kbd>c</kbd> record · <kbd>k</kbd> screenshot · <kbd>s</kbd> save · <kbd>h</kbd> hide panel</div>
+    <div class="note">Where EvoMaxx comes from: <a href="reproductions/live/index.html">its sources, live</a> · <a href="reproductions/">the reproductions</a></div>
+  </section>
+  <section class="page" data-tab="Lamp">
+    <div class="note">The 2D world as an endless floor, its bright matter floating above it as wax. Everything here changes only the picture, never the chemistry.</div>
+    <h2>Wax</h2>
+    <div class="row"><span>hover</span><input id="base" type="range" min="2" max="60" value="16"><span id="baseValue">16</span></div>
+    <div class="row"><span>rise of bright bodies</span><input id="lift" type="range" min="0" max="60" value="14"><span id="liftValue">14</span></div>
+    <div class="row"><span>thickness</span><input id="thickness" type="range" min="1" max="20" value="4"><span id="thicknessValue">4</span></div>
+    <div class="row"><span>roundness</span><input id="softness" type="range" min="0" max="4" step="0.1" value="1.8"><span id="softnessValue">1.8</span></div>
+    <div class="row"><span>float above</span><input id="floatAt" type="range" min="0.02" max="0.95" step="0.01" value="0.4"><span id="floatValue">0.40</span></div>
+    <div class="row"><span>auto (only the brightest quarter floats)</span><input type="checkbox" id="floatAuto" checked></div>
+    <div class="row"><span>wax inertia (rises, cools, sinks)</span><input id="inertia" type="range" min="0" max="1" step="0.05" value="0.6"><span id="inertiaValue">0.6</span></div>
+    <h2>Light</h2>
+    <div class="row"><span>sun height</span><input id="elevation" type="range" min="0.15" max="1.5" step="0.01" value="1.1"><span id="elevationValue">1.1</span></div>
+    <div class="row"><span>sun direction</span><input id="azimuth" type="range" min="-3.14" max="3.14" step="0.01" value="-0.95"><span id="azimuthValue">-0.95</span></div>
+    <div class="row"><span>shadows</span><input id="shadow" type="range" min="0" max="1" step="0.05" value="0.6"><span id="shadowValue">0.6</span></div>
+    <div class="row"><span>light through thin wax</span><input id="translucency" type="range" min="0" max="1.5" step="0.05" value="0.5"><span id="translucencyValue">0.5</span></div>
+    <div class="row"><span>fog</span><input id="fog" type="range" min="0" max="1.5" step="0.01" value="0.45"><span id="fogValue">0.45</span></div>
+    <div class="row"><span>glow</span><input id="bloom" type="range" min="0" max="1.5" step="0.05" value="0.6"><span id="bloomValue">0.60</span></div>
+    <div class="row"><span>wet floor</span><input id="mirror" type="range" min="0" max="1" step="0.05" value="0.5"><span id="mirrorValue">0.50</span></div>
+    <div class="row"><span>render quality</span><select id="quality"><option value="auto" selected>auto (mirror first, never below 60 %)</option><option value="1">full</option><option value="0.75">3/4</option><option value="0.6">60 %</option></select></div>
+    <h2>Camera</h2>
+    <div class="row shots"><button data-shot="overview">overview</button><button data-shot="glide">low glide</button><button data-shot="macro">macro</button><button data-shot="horizon">horizon</button><button data-shot="above">high above</button></div>
+    <div class="row"><span>follow a creature (t)</span><input type="checkbox" id="follow"></div>
+    <div class="row"><span>dolly: fly slowly over the endless floor (g)</span><input type="checkbox" id="dolly"></div>
+    <div class="note"><kbd>left drag</kbd> look around · <kbd>right drag</kbd> move over the floor · <kbd>wheel</kbd> zoom · <kbd>arrows</kbd> glide · <kbd>shift drag</kbd> pours ink from the sky</div>
+  </section>
+  <section class="page" data-tab="Music">
+    <div class="row"><button id="sound" class="primary">▶ play the world (a)</button><select id="musicPreset"></select></div>
+    <canvas id="roll" height="120"></canvas>
+    <div id="music"></div>
+    <div class="note">Every note comes from the world: the music box plays what is under the bar, the melody plays the genome, bells ring when bodies form, the drums follow its motion. Nothing is pre-recorded.</div>
+  </section>
+  <section class="page" data-tab="Genome">
+    <div class="note">Every number is live: drag a slider and the world follows.</div>
+    <div id="globals"></div><div id="physicsParams"></div><div id="genes"></div>
+    <div class="row"><button id="copyGenome">copy genome</button><button id="pasteGenome">paste genome</button></div>
+  </section>
+  <section class="page" data-tab="Evolve">
+    <h2>The original evolution (v1)</h2>
+    <div class="note">EvoMaxx v1's own loop, as it was: a pool of 12 organisms; every 90 steps a mutated child takes over the living world, every 270 steps the two fittest are crossed, and the weakest leaves the pool. Fitness is v1's score of the field: its texture, colour diversity, brightness and contrast. An extinction keeps the best genome and starts a fresh pool on a fresh world.</div>
+    <button class="big" id="v1Start">start the v1 evolution (o)</button>
+    <div class="row"><span>v1's own rule (box · v1 decay · Gaussian)</span><button id="v1Rule">use it</button></div>
+    <div class="row"><span>extinction after 5 s of a flat world</span><input type="checkbox" id="v1Auto" checked></div>
+    <button class="big" id="v1Extinction">extinction event: keep the best</button>
+    <div class="note" id="v1Status">off</div>
+    <h2>Morph</h2>
+    <div class="note">The living world turns into another organism: continuous numbers glide, discrete choices switch halfway, nothing is reseeded.</div>
+    <div class="row"><span>into</span><select id="morphInto"></select></div>
+    <div class="row"><span>morph seconds</span><input id="morphSeconds" type="range" min="1" max="20" value="8"><span id="morphSecondsValue">8</span></div>
+    <button class="big" id="morphGo">morph the living world into it</button>
+    <h2>Discover (MAP-Elites)</h2>
+    <div class="note">Genomes with the current rule are tested nine at a time and kept in an 8 × 8 atlas, one elite per cell, by hue of the mean colour (columns) and activity (rows).</div>
+    <div class="row"><span>steps per test</span><select id="testSteps"><option>300</option><option selected>600</option><option>1200</option></select></div>
+    <div class="row"><span>tested</span><b id="tested">0</b><span>atlas filled</span><b id="filled">0 / 64</b></div>
+    <button class="big" id="clearAtlas">clear atlas</button>
+  </section>
+  <section class="page" data-tab="Codex">
+    <div class="note">Saved organisms, kept in this browser. A share link carries the genome; anyone who opens it sees the same organism.</div>
+    <button class="big" id="save">save current organism (s)</button>
+    <div class="row"><button id="share">copy share link</button><button id="export">export JSON</button><button id="import">import JSON</button></div>
+    <input type="file" id="importFile" accept=".json,application/json" hidden>
+    <div id="codexList"></div>
+  </section>
+</div>
+<script src="js/engine.js"></script>
+<script src="js/presets.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

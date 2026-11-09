@@ -1,0 +1,1623 @@
+{
+ "rules": 80,
+ "steps": 600,
+ "world": 128,
+ "flow": {
+  "localised": 78,
+  "spread": 2,
+  "dead": 0,
+  "max_mass_drift": 1.9322437366750734e-14
+ },
+ "lenia": {
+  "localised": 1,
+  "spread": 36,
+  "dead": 43,
+  "max_mass_drift": 8.350988351633763
+ },
+ "paired": {
+  "flow_only_localised": 77,
+  "lenia_only_localised": 0
+ },
+ "runs": {
+  "1": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8488556853844928e-14,
+    "mass_range": [
+     787.0768575071519,
+     787.0768575071666
+    ],
+    "occupied": 0.077392578125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.945538620591777,
+    "mass_range": [
+     699.499595220919,
+     8171.428603693272
+    ],
+    "occupied": 0.7164306640625
+   }
+  },
+  "2": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8392876562488393e-14,
+    "mass_range": [
+     791.1712547478672,
+     791.1712547478819
+    ],
+    "occupied": 0.09295654296875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 3.1257609678113747,
+    "mass_range": [
+     512.663560319446,
+     4656.631788611481
+    ],
+    "occupied": 0.40118408203125
+   }
+  },
+  "3": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8525353705993407e-14,
+    "mass_range": [
+     828.471258146748,
+     828.4712581467634
+    ],
+    "occupied": 0.07373046875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     828.4712581467634
+    ],
+    "occupied": 0.0
+   }
+  },
+  "4": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.838285553122978e-14,
+    "mass_range": [
+     791.6025452979823,
+     791.6025452979968
+    ],
+    "occupied": 0.0716552734375
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 8.350988351633763,
+    "mass_range": [
+     791.6025452979968,
+     7904.86039153537
+    ],
+    "occupied": 0.96783447265625
+   }
+  },
+  "5": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8262292869558804e-14,
+    "mass_range": [
+     784.3780436136122,
+     784.3780436136268
+    ],
+    "occupied": 0.07366943359375
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.266300308758275,
+    "mass_range": [
+     647.2426049697706,
+     5236.2484379295765
+    ],
+    "occupied": 0.30621337890625
+   }
+  },
+  "6": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8062846314175006e-14,
+    "mass_range": [
+     793.0389986035605,
+     793.0389986035748
+    ],
+    "occupied": 0.06903076171875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     793.0389986035748
+    ],
+    "occupied": 0.0
+   }
+  },
+  "7": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8385522312972205e-14,
+    "mass_range": [
+     803.8547206995606,
+     803.8547206995754
+    ],
+    "occupied": 0.0809326171875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     803.8547206995754
+    ],
+    "occupied": 0.0
+   }
+  },
+  "8": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8888766676259897e-14,
+    "mass_range": [
+     788.4567582831897,
+     788.4567582832046
+    ],
+    "occupied": 0.073974609375
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 4.671865632274392,
+    "mass_range": [
+     527.3773750445164,
+     4532.436034798831
+    ],
+    "occupied": 0.2889404296875
+   }
+  },
+  "9": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8558169655801102e-14,
+    "mass_range": [
+     808.628375404581,
+     808.6283754045961
+    ],
+    "occupied": 0.13201904296875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     808.628375404596
+    ],
+    "occupied": 0.0
+   }
+  },
+  "10": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.826715220216841e-14,
+    "mass_range": [
+     784.1693874550931,
+     784.1693874551074
+    ],
+    "occupied": 0.07183837890625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     784.1693874551074
+    ],
+    "occupied": 0.0
+   }
+  },
+  "11": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8391148653015766e-14,
+    "mass_range": [
+     797.4271940694332,
+     797.427194069448
+    ],
+    "occupied": 0.111083984375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     797.4271940694479
+    ],
+    "occupied": 0.0
+   }
+  },
+  "12": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.841512502568246e-14,
+    "mass_range": [
+     784.0418335747842,
+     784.0418335747986
+    ],
+    "occupied": 0.07080078125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 8.179312656951142,
+    "mass_range": [
+     784.0418335747986,
+     7563.623695761287
+    ],
+    "occupied": 0.4468994140625
+   }
+  },
+  "13": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8644288727244158e-14,
+    "mass_range": [
+     786.6002442162319,
+     786.6002442162467
+    ],
+    "occupied": 0.09234619140625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     786.6002442162466
+    ],
+    "occupied": 0.0
+   }
+  },
+  "14": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.884176146503378e-14,
+    "mass_range": [
+     802.4912875069951,
+     802.4912875070104
+    ],
+    "occupied": 0.0762939453125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     802.4912875070103
+    ],
+    "occupied": 0.0
+   }
+  },
+  "15": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8801707055038492e-14,
+    "mass_range": [
+     804.2008830747466,
+     804.2008830747618
+    ],
+    "occupied": 0.0682373046875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.9877938267022595,
+    "mass_range": [
+     804.2008830747617,
+     5619.589966178325
+    ],
+    "occupied": 0.3543701171875
+   }
+  },
+  "16": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8574892174605753e-14,
+    "mass_range": [
+     795.6594721995201,
+     795.6594721995349
+    ],
+    "occupied": 0.077880859375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     795.6594721995349
+    ],
+    "occupied": 0.0
+   }
+  },
+  "17": {
+   "flow": {
+    "fate": "spread",
+    "mass_drift": 1.8527316771141002e-14,
+    "mass_range": [
+     779.2940860780561,
+     779.2940860780707
+    ],
+    "occupied": 0.1048583984375
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 1.8797107388799892,
+    "mass_range": [
+     373.22855075613234,
+     2247.396729336812
+    ],
+    "occupied": 0.145263671875
+   }
+  },
+  "18": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.835230832378872e-14,
+    "mass_range": [
+     780.5307812072626,
+     780.530781207277
+    ],
+    "occupied": 0.069091796875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     780.530781207277
+    ],
+    "occupied": 0.0
+   }
+  },
+  "19": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8583564372606556e-14,
+    "mass_range": [
+     795.2881700991384,
+     795.2881700991534
+    ],
+    "occupied": 0.09063720703125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.7865492688884705,
+    "mass_range": [
+     795.2881700991531,
+     7989.062973532122
+    ],
+    "occupied": 0.58648681640625
+   }
+  },
+  "20": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.916368598493507e-14,
+    "mass_range": [
+     818.6725464984115,
+     818.6725464984272
+    ],
+    "occupied": 0.072998046875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 1.8286333395462215,
+    "mass_range": [
+     324.9376807797014,
+     2315.7244591966555
+    ],
+    "occupied": 0.14617919921875
+   }
+  },
+  "21": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8626216192498335e-14,
+    "mass_range": [
+     769.0526838560226,
+     769.052683856037
+    ],
+    "occupied": 0.11419677734375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     769.052683856037
+    ],
+    "occupied": 0.0
+   }
+  },
+  "22": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8590709544617207e-14,
+    "mass_range": [
+     813.3282584339352,
+     813.3282584339504
+    ],
+    "occupied": 0.095947265625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.446180996503452,
+    "mass_range": [
+     629.1727964115128,
+     5671.838546071847
+    ],
+    "occupied": 0.32342529296875
+   }
+  },
+  "23": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8565630005145656e-14,
+    "mass_range": [
+     820.5504607424577,
+     820.550460742473
+    ],
+    "occupied": 0.090087890625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.24674153479055,
+    "mass_range": [
+     514.5022516375474,
+     8400.944225231258
+    ],
+    "occupied": 0.68743896484375
+   }
+  },
+  "24": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8439320458326114e-14,
+    "mass_range": [
+     801.5094123024664,
+     801.5094123024813
+    ],
+    "occupied": 0.08819580078125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 3.759311402139495,
+    "mass_range": [
+     420.8211557110154,
+     3818.0348372236576
+    ],
+    "occupied": 0.2371826171875
+   }
+  },
+  "25": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.9069813414086755e-14,
+    "mass_range": [
+     786.9328479201426,
+     786.9328479201577
+    ],
+    "occupied": 0.07366943359375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     786.9328479201577
+    ],
+    "occupied": 0.0
+   }
+  },
+  "26": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8366863285112666e-14,
+    "mass_range": [
+     804.6713624633567,
+     804.6713624633716
+    ],
+    "occupied": 0.073486328125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 6.220966668472844,
+    "mass_range": [
+     804.6713624633715,
+     7126.398370417855
+    ],
+    "occupied": 0.3616943359375
+   }
+  },
+  "27": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8843368861454042e-14,
+    "mass_range": [
+     808.4560869505121,
+     808.4560869505274
+    ],
+    "occupied": 0.1405029296875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     808.4560869505274
+    ],
+    "occupied": 0.0
+   }
+  },
+  "28": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.838625629118307e-14,
+    "mass_range": [
+     803.8226308689639,
+     803.8226308689786
+    ],
+    "occupied": 0.11016845703125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 4.801629065085631,
+    "mass_range": [
+     786.3335135870566,
+     4687.822188097405
+    ],
+    "occupied": 0.29034423828125
+   }
+  },
+  "29": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8810758761911924e-14,
+    "mass_range": [
+     809.8576164584163,
+     809.8576164584315
+    ],
+    "occupied": 0.09503173828125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     809.8576164584315
+    ],
+    "occupied": 0.0
+   }
+  },
+  "30": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8464679851025673e-14,
+    "mass_range": [
+     794.2516298366015,
+     794.2516298366162
+    ],
+    "occupied": 0.0718994140625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     794.2516298366162
+    ],
+    "occupied": 0.0
+   }
+  },
+  "31": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.9322437366750734e-14,
+    "mass_range": [
+     794.2953987175348,
+     794.2953987175501
+    ],
+    "occupied": 0.06903076171875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 4.962805003365561,
+    "mass_range": [
+     647.5263043244224,
+     4773.897738121422
+    ],
+    "occupied": 0.291259765625
+   }
+  },
+  "32": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8583700127984233e-14,
+    "mass_range": [
+     801.3999170759789,
+     801.3999170759938
+    ],
+    "occupied": 0.0660400390625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.8580134795085685,
+    "mass_range": [
+     684.9151214398248,
+     5536.051197936867
+    ],
+    "occupied": 0.36822509765625
+   }
+  },
+  "33": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.852131457140483e-14,
+    "mass_range": [
+     797.9611191652479,
+     797.9611191652626
+    ],
+    "occupied": 0.0816650390625
+   },
+   "lenia": {
+    "fate": "localised",
+    "mass_drift": 0.33634732353876073,
+    "mass_range": [
+     270.19887544966673,
+     797.9611191652626
+    ],
+    "occupied": 0.0323486328125
+   }
+  },
+  "34": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8734406311737226e-14,
+    "mass_range": [
+     807.089862650286,
+     807.0898626503011
+    ],
+    "occupied": 0.085205078125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     807.0898626503011
+    ],
+    "occupied": 0.0
+   }
+  },
+  "35": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.831677699520571e-14,
+    "mass_range": [
+     806.8716951501997,
+     806.8716951502146
+    ],
+    "occupied": 0.12518310546875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     806.8716951502145
+    ],
+    "occupied": 0.0
+   }
+  },
+  "36": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.86338434630891e-14,
+    "mass_range": [
+     811.4455531906681,
+     811.4455531906832
+    ],
+    "occupied": 0.16156005859375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     811.4455531906832
+    ],
+    "occupied": 0.0
+   }
+  },
+  "37": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8431490802703843e-14,
+    "mass_range": [
+     789.5137395088987,
+     789.5137395089132
+    ],
+    "occupied": 0.07330322265625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     789.5137395089132
+    ],
+    "occupied": 0.0
+   }
+  },
+  "38": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.832285825578786e-14,
+    "mass_range": [
+     819.0131894139774,
+     819.0131894139924
+    ],
+    "occupied": 0.0953369140625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 6.209717830266068,
+    "mass_range": [
+     763.8958440755845,
+     5906.703726120741
+    ],
+    "occupied": 0.3697509765625
+   }
+  },
+  "39": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8908982058125078e-14,
+    "mass_range": [
+     805.6507858470511,
+     805.6507858470663
+    ],
+    "occupied": 0.08642578125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     805.6507858470663
+    ],
+    "occupied": 0.0
+   }
+  },
+  "40": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.864050895423434e-14,
+    "mass_range": [
+     823.3532212075959,
+     823.3532212076112
+    ],
+    "occupied": 0.12744140625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 1.9509501883479852,
+    "mass_range": [
+     405.72567418721496,
+     3243.5741946864714
+    ],
+    "occupied": 0.3626708984375
+   }
+  },
+  "41": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8320369867456746e-14,
+    "mass_range": [
+     794.3024804436818,
+     794.3024804436966
+    ],
+    "occupied": 0.0919189453125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     794.3024804436966
+    ],
+    "occupied": 0.0
+   }
+  },
+  "42": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.844581739860378e-14,
+    "mass_range": [
+     813.553677506801,
+     813.5536775068161
+    ],
+    "occupied": 0.0791015625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     813.553677506816
+    ],
+    "occupied": 0.0
+   }
+  },
+  "43": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8722506754426263e-14,
+    "mass_range": [
+     807.602828793211,
+     807.6028287932262
+    ],
+    "occupied": 0.0738525390625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 6.544174422859227,
+    "mass_range": [
+     807.6028287932261,
+     6142.025380311834
+    ],
+    "occupied": 0.3914794921875
+   }
+  },
+  "44": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8255823886734077e-14,
+    "mass_range": [
+     790.8834178191635,
+     790.883417819178
+    ],
+    "occupied": 0.07098388671875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     790.8834178191779
+    ],
+    "occupied": 0.0
+   }
+  },
+  "45": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.887174875983313e-14,
+    "mass_range": [
+     789.1677624084217,
+     789.1677624084366
+    ],
+    "occupied": 0.065185546875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     789.1677624084366
+    ],
+    "occupied": 0.0
+   }
+  },
+  "46": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.837618327437636e-14,
+    "mass_range": [
+     798.0766107474465,
+     798.0766107474611
+    ],
+    "occupied": 0.07513427734375
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 1.9166229042658944,
+    "mass_range": [
+     543.1613812500004,
+     2332.672102781193
+    ],
+    "occupied": 0.1497802734375
+   }
+  },
+  "47": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8443450898018503e-14,
+    "mass_range": [
+     807.4939892691921,
+     807.493989269207
+    ],
+    "occupied": 0.09686279296875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     807.493989269207
+    ],
+    "occupied": 0.0
+   }
+  },
+  "48": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.84822348852066e-14,
+    "mass_range": [
+     787.346082264873,
+     787.3460822648876
+    ],
+    "occupied": 0.1146240234375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     8037.773071564521
+    ],
+    "occupied": 0.0
+   }
+  },
+  "49": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.859251290420054e-14,
+    "mass_range": [
+     801.0200567437394,
+     801.0200567437544
+    ],
+    "occupied": 0.087890625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     801.0200567437543
+    ],
+    "occupied": 0.0
+   }
+  },
+  "50": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.855255877089142e-14,
+    "mass_range": [
+     796.6172799300443,
+     796.6172799300591
+    ],
+    "occupied": 0.08135986328125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     796.6172799300591
+    ],
+    "occupied": 0.0
+   }
+  },
+  "51": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8622513656701415e-14,
+    "mass_range": [
+     805.834424712735,
+     805.83442471275
+    ],
+    "occupied": 0.09625244140625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     805.83442471275
+    ],
+    "occupied": 0.0
+   }
+  },
+  "52": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.824455382045401e-14,
+    "mass_range": [
+     791.3719640793979,
+     791.3719640794124
+    ],
+    "occupied": 0.09869384765625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 4.859034024774259,
+    "mass_range": [
+     544.4371007326779,
+     4637.475720776047
+    ],
+    "occupied": 0.28851318359375
+   }
+  },
+  "53": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.853891088488913e-14,
+    "mass_range": [
+     797.2037297971075,
+     797.2037297971224
+    ],
+    "occupied": 0.085205078125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     797.2037297971224
+    ],
+    "occupied": 0.0
+   }
+  },
+  "54": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.833646045509719e-14,
+    "mass_range": [
+     806.0055505260532,
+     806.005550526068
+    ],
+    "occupied": 0.0791015625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     806.005550526068
+    ],
+    "occupied": 0.0
+   }
+  },
+  "55": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8394645649054142e-14,
+    "mass_range": [
+     821.9973195162988,
+     821.997319516314
+    ],
+    "occupied": 0.0751953125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     821.997319516314
+    ],
+    "occupied": 0.0
+   }
+  },
+  "56": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8722715497330875e-14,
+    "mass_range": [
+     789.3774226242317,
+     789.3774226242465
+    ],
+    "occupied": 0.0933837890625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 4.876221714556247,
+    "mass_range": [
+     675.2487630549488,
+     4641.210987474696
+    ],
+    "occupied": 0.29864501953125
+   }
+  },
+  "57": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8949367861764266e-14,
+    "mass_range": [
+     809.933249719969,
+     809.9332497199844
+    ],
+    "occupied": 0.0841064453125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 6.155838068952597,
+    "mass_range": [
+     809.9332497199844,
+     9123.861184600411
+    ],
+    "occupied": 0.6558837890625
+   }
+  },
+  "58": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.844696326223103e-14,
+    "mass_range": [
+     813.5031422748164,
+     813.5031422748314
+    ],
+    "occupied": 0.0888671875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     813.5031422748314
+    ],
+    "occupied": 0.0
+   }
+  },
+  "59": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8729357038613935e-14,
+    "mass_range": [
+     776.9575430894499,
+     776.9575430894645
+    ],
+    "occupied": 0.08660888671875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 3.664620012696417,
+    "mass_range": [
+     719.3769998829214,
+     3639.0830988711496
+    ],
+    "occupied": 0.2366943359375
+   }
+  },
+  "60": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.9137368292369618e-14,
+    "mass_range": [
+     801.9766802803945,
+     801.9766802804099
+    ],
+    "occupied": 0.076171875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 3.936386625791708,
+    "mass_range": [
+     674.6620057451067,
+     3959.098293113454
+    ],
+    "occupied": 0.25115966796875
+   }
+  },
+  "61": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.882990163450378e-14,
+    "mass_range": [
+     796.959159454924,
+     796.959159454939
+    ],
+    "occupied": 0.06903076171875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 7.416005179697399,
+    "mass_range": [
+     796.959159454939,
+     6747.264635023179
+    ],
+    "occupied": 0.42169189453125
+   }
+  },
+  "62": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.876233005265663e-14,
+    "mass_range": [
+     793.7700541315585,
+     793.7700541315734
+    ],
+    "occupied": 0.06622314453125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 6.10522073458553,
+    "mass_range": [
+     793.7700541315734,
+     6249.541355621341
+    ],
+    "occupied": 0.3551025390625
+   }
+  },
+  "63": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.821874990702816e-14,
+    "mass_range": [
+     786.2527136067359,
+     786.2527136067504
+    ],
+    "occupied": 0.09661865234375
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 4.858560626431058,
+    "mass_range": [
+     756.5556881632306,
+     5858.783028381361
+    ],
+    "occupied": 0.2982177734375
+   }
+  },
+  "64": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.844209506482588e-14,
+    "mass_range": [
+     813.71788435658,
+     813.717884356595
+    ],
+    "occupied": 0.0758056640625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     813.717884356595
+    ],
+    "occupied": 0.0
+   }
+  },
+  "65": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.836607075805033e-14,
+    "mass_range": [
+     792.3259917741577,
+     792.3259917741723
+    ],
+    "occupied": 0.0869140625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 5.383543268953221,
+    "mass_range": [
+     494.0836093960499,
+     5058.795911091788
+    ],
+    "occupied": 0.3607177734375
+   }
+  },
+  "66": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8910148496361026e-14,
+    "mass_range": [
+     817.6249876152376,
+     817.6249876152531
+    ],
+    "occupied": 0.09356689453125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 3.3082603224300704,
+    "mass_range": [
+     603.3097514564304,
+     7548.72509024305
+    ],
+    "occupied": 0.46246337890625
+   }
+  },
+  "67": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8614955239465162e-14,
+    "mass_range": [
+     793.9470556704084,
+     793.9470556704232
+    ],
+    "occupied": 0.0882568359375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     793.9470556704232
+    ],
+    "occupied": 0.0
+   }
+  },
+  "68": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8518147241037887e-14,
+    "mass_range": [
+     798.0976018517431,
+     798.0976018517579
+    ],
+    "occupied": 0.06976318359375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     798.0976018517579
+    ],
+    "occupied": 0.0
+   }
+  },
+  "69": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.868651489466813e-14,
+    "mass_range": [
+     803.0744450659938,
+     803.0744450660088
+    ],
+    "occupied": 0.06402587890625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     803.0744450660088
+    ],
+    "occupied": 0.0
+   }
+  },
+  "70": {
+   "flow": {
+    "fate": "spread",
+    "mass_drift": 1.8569207583201798e-14,
+    "mass_range": [
+     802.0253785629499,
+     802.0253785629649
+    ],
+    "occupied": 0.2109375
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 0.9552276548864543,
+    "mass_range": [
+     372.9311689240592,
+     6251.989614419526
+    ],
+    "occupied": 0.3507080078125
+   }
+  },
+  "71": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8429962829071077e-14,
+    "mass_range": [
+     814.2535456220135,
+     814.2535456220285
+    ],
+    "occupied": 0.0872802734375
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     3474.8906941224914
+    ],
+    "occupied": 0.0
+   }
+  },
+  "72": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8651645753188207e-14,
+    "mass_range": [
+     804.5757879938226,
+     804.5757879938376
+    ],
+    "occupied": 0.09918212890625
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 7.214368721103388,
+    "mass_range": [
+     804.5757879938376,
+     7532.466683476326
+    ],
+    "occupied": 0.76483154296875
+   }
+  },
+  "73": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.83891972487055e-14,
+    "mass_range": [
+     803.6940766868001,
+     803.6940766868149
+    ],
+    "occupied": 0.09356689453125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     803.6940766868149
+    ],
+    "occupied": 0.0
+   }
+  },
+  "74": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8776960607868387e-14,
+    "mass_range": [
+     805.2607518726192,
+     805.2607518726343
+    ],
+    "occupied": 0.08404541015625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     805.2607518726343
+    ],
+    "occupied": 0.0
+   }
+  },
+  "75": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.869410206023666e-14,
+    "mass_range": [
+     802.7485102466087,
+     802.7485102466239
+    ],
+    "occupied": 0.0704345703125
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     802.7485102466237
+    ],
+    "occupied": 0.0
+   }
+  },
+  "76": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8496188339912814e-14,
+    "mass_range": [
+     811.3381148304081,
+     811.3381148304231
+    ],
+    "occupied": 0.09991455078125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 2.7239052254181013,
+    "mass_range": [
+     811.3381148304231,
+     5527.435130674445
+    ],
+    "occupied": 0.51239013671875
+   }
+  },
+  "77": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.819543395502842e-14,
+    "mass_range": [
+     799.7564259436128,
+     799.7564259436274
+    ],
+    "occupied": 0.12066650390625
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     799.7564259436274
+    ],
+    "occupied": 0.0
+   }
+  },
+  "78": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.8654782593613403e-14,
+    "mass_range": [
+     804.4404969045672,
+     804.4404969045822
+    ],
+    "occupied": 0.0811767578125
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 8.290812555619679,
+    "mass_range": [
+     804.4404969045822,
+     7486.558694842211
+    ],
+    "occupied": 0.4652099609375
+   }
+  },
+  "79": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.874928098094129e-14,
+    "mass_range": [
+     800.3860305100425,
+     800.3860305100575
+    ],
+    "occupied": 0.1766357421875
+   },
+   "lenia": {
+    "fate": "dead",
+    "mass_drift": 1.0,
+    "mass_range": [
+     0.0,
+     800.3860305100575
+    ],
+    "occupied": 0.0
+   }
+  },
+  "80": {
+   "flow": {
+    "fate": "localised",
+    "mass_drift": 1.864746225457944e-14,
+    "mass_range": [
+     780.3697376994515,
+     780.3697376994661
+    ],
+    "occupied": 0.0701904296875
+   },
+   "lenia": {
+    "fate": "spread",
+    "mass_drift": 7.262021310058784,
+    "mass_range": [
+     570.5426445864941,
+     6672.865715279191
+    ],
+    "occupied": 0.65594482421875
+   }
+  }
+ }
+}
