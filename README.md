@@ -17,7 +17,7 @@ computed live, on your GPU, from the rules.
 <p align="center"><img src="docs/demo.webp" width="760" alt="Three EvoMaxx organisms: lava lamp, physarum creatures, colour flocking"></p>
 <p align="center"><sub>Three organisms from the preset menu, recorded live: cell-like bodies in the lava lamp, physarum creatures in the flat view, and a colour-flocking world.</sub></p>
 
-**[▶ Open EvoMaxx](https://emreerturk-3.github.io/evomaxx/)**, or download this folder and
+**[▶ Open EvoMaxx](https://emreerturk-3.github.io/evomaxx/)** · **[▶ A-life reproductions, live](https://emreerturk-3.github.io/evomaxx/reproductions/live/)**, or download this folder and
 open `index.html`.
 
 | | |
@@ -40,7 +40,7 @@ synchrony, random gene networks, Langton's edge of chaos, MAP-Elites, the sunflo
 angle and Euclidean rhythms. Each source is
 **reproduced on its own** in [reproductions/](reproductions/), from the paper, with its
 published results measured again (including what did not reproduce), and **runs live** in the
-[reproductions viewer](reproductions/live/index.html).
+[reproductions viewer](https://emreerturk-3.github.io/evomaxx/reproductions/live/).
 
 **[EXPLAINED.md](EXPLAINED.md)** puts it together for the curious: what each piece of
 EvoMaxx is, where it comes from, what is EvoMaxx's own, and what the experiments found.

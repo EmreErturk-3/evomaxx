@@ -6,7 +6,7 @@ model as stated, its published results measured again, and what could not be rep
 plainly. Each folder has the code, the figures and a README that ends with what EvoMaxx takes
 from it. [EXPLAINED.md](../EXPLAINED.md) puts them together into the whole of EvoMaxx.
 
-**▶ All of them live:** [the reproductions viewer](live/index.html) (WebGL 2, in the browser).
+**▶ All of them live:** [the reproductions viewer](https://emreerturk-3.github.io/evomaxx/reproductions/live/) (WebGL 2, in the browser).
 
 | | source | what is reproduced | result | in EvoMaxx |
 |---|---|---|---|---|
